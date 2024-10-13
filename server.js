@@ -8,7 +8,7 @@ const app = express()
 // ========================
 // Updates environment variables
 // @see https://zellwk.com/blog/environment-variables/
-require('./dotenv')
+// require('./dotenv')
 
 // Replace process.env.DB_URL with your actual connection string
 const connectionString = process.env.MONGO_URI

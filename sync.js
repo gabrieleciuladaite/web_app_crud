@@ -1,10 +1,10 @@
 const Rsync = require('rsync')
 
 // Updates environment variables
-require('./dotenv')
+// require('./dotenv')
 
 // Sync secrets
-sync('./secrets', '/var/www/crud-demo')
+// sync('./secrets', '/var/www/crud-demo')
 
 // ========================
 // Functions
