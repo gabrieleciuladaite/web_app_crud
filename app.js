@@ -8,6 +8,8 @@ const app = express();
 // connect to mongodb & listen for requests
 const dbURI = process.env.MONGO_URI;
 
+
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }) //this return promise
   .then((result) =>{ console.log("Database-connected"); app.listen(8080)})
   //after db connected than it will listen to port3000

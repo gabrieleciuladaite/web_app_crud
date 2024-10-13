@@ -5,7 +5,7 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="blogs content">
-    <h2>All Users</h2>
+    <h2>All Students</h2>
 
     <% if (users.length > 0) { %>
       <% users.forEach(eachuser => { %>
@@ -15,11 +15,10 @@
         </a>
       <% }) %>
     <% } else { %>
-      <p>There are no users to display...</p>
+      <p>There are no students to display...</p>
     <% } %>
     
   </div>
 
-  <%- include("./partials/footer.ejs") %>
 </body>
 </html>

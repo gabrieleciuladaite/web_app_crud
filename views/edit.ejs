@@ -4,25 +4,22 @@
 <body>
   <%- include("./partials/nav.ejs") %>
 
-  <h2>Edit-Profile</h2>
+  <h2>Edit-Student</h2>
 
   <div class="create-blog content">
     <form action="/edit/<%= user.id %>" method="POST">
-      <label for="name">UserName:</label>
+      <label for="name">Full Name:</label>
       <input type="text" value="<%= user.name %>" id="title" name="name" required>
       <label for="email">Email:</label>
       <input type="email" value="<%= user.email %>"  id="snippet" name="email" required>
-      <label for="password" >password:</label>
-      <input type="password" value="<%= user.password %>"  name="password" id="pwd">
-      <label for="address">Address:</label>
-      <input type="text" value="<%= user.address %>"  name="address" id="address">
-      <label for="number">Number:</label>
-      <input type="number" value="<%= user.number %>"  name="number" id="number">
+      <label for="password" >Year of Study</label>
+      <input type="number" value="<%= user.password %>"  name="password" id="pwd" required>
+      <label for="address">Date of Birth:</label>
+      <input type="date" value="<%= user.address %>"  name="address" id="address" required>
 
       <button type="submit">Update</button>
     </form>
   </div>
 
-  <%- include("./partials/footer.ejs") %>
 </body>
 </html>

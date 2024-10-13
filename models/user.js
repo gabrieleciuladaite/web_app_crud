@@ -19,17 +19,13 @@ const UserSchema = new Schema({
     required: true,
   },
   password: {
-    type: String,
+    type: Number,
     required: true
   },
   address:{
     type:String,
     required: true
-  },
-  number:{
-    type:Number,
-    required: true
-  },
+  }
 },  //this will auto update the timestamp when we do inserting or updating documents of this type schema
 { timestamps: true });
 
