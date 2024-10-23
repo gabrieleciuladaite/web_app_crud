@@ -23,7 +23,7 @@ app.set("views", __dirname + "/views");
 
  
 // middleware & static files
-app.use(express.static(__dirname + "/public/"));
+app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true })); //this will helps to get submitted data of form in req.body obj
 
 
