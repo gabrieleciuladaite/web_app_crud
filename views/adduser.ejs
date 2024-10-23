@@ -7,14 +7,14 @@
 
   <div class="create-blog content">
     <form action="/user/create" method="POST">
-      <label >Full Name:</label>
-      <input type="text" id="title"  required>
-      <label >Email:</label>
-      <input type="email" id="snippet" required>
-      <label >Year of Study:</label>
-      <input type="number"  id="pwd" required>
-      <label >Date of Birth:</label>
-      <input type="date"  id="address" required>
+      <label for="name">Full Name:</label>
+      <input type="text" id="title" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="snippet" name="email" required>
+      <label for="password">Year of Study:</label>
+      <input type="number" name="password" id="pwd" required>
+      <label for="address">Date of Birth:</label>
+      <input type="date" name="address" id="address" required>
 
      <div class="sub">
       <button type="submit">Submit</button>
