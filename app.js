@@ -20,7 +20,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }) //t
 app.set('view engine', 'ejs');
  
 // middleware & static files
-app.use(express.static('public')); //this will helps to use style.css file
+app.use(express.static(__dirname + "public"));
 app.use(express.urlencoded({ extended: true })); //this will helps to get submitted data of form in req.body obj
 
 
